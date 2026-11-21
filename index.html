@@ -423,6 +423,25 @@ td small{color:var(--muted);margin-left:4px;font-size:12px}
 .dropzone{border:2px dashed rgba(255,255,255,.22);border-radius:4px;padding:22px;text-align:center;color:var(--silver);margin-bottom:16px;cursor:pointer}
 .dropzone.drag{border-color:var(--red);background:rgba(215,25,46,.08)}
 @media (max-width:560px){.pgrid{grid-template-columns:1fr}}
+/* mobil düzeltmeler */
+html,body{overflow-x:hidden}
+@media (max-width:760px){
+  #glance{grid-template-columns:repeat(3,1fr)!important}
+  .g-item{padding:22px 12px;border-right:1px solid #E3E8F1;min-width:0}
+  .g-item .v{font-size:34px}
+  .g-item .v sup{font-size:14px}
+  .g-item .l{font-size:10.5px;letter-spacing:.1em}
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+  #statTable th:nth-child(2),#statTable td:nth-child(2){display:none}
+  #statTable th,#statTable td{padding:10px 8px;font-size:13px;white-space:nowrap}
+  #statTable td:first-child{white-space:normal;min-width:120px}
+  .bio-strip{display:grid!important;grid-template-columns:repeat(4,1fr);width:100%}
+  .bio-strip>div{padding:12px 8px!important;min-width:0}
+  .bio-strip small{font-size:9.5px!important;letter-spacing:.08em!important}
+  .bio-strip strong{font-size:20px!important}
+  .btns{display:grid!important;grid-template-columns:1fr 1fr;gap:10px;width:100%}
+  .btns .btn{padding:14px 8px!important;font-size:12px!important;text-align:center;justify-content:center}
+}
 </style>
 </head>
 <body>
