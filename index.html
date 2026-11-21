@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://ardaduhaardali.com/media/f4a8608726.jpg">
 <meta name="robots" content="index,follow">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%23002e6d%22/%3E%3Ctext x=%2232%22 y=%2244%22 font-family=%22Arial%22 font-weight=%22900%22 font-size=%2230%22 fill=%22white%22 text-anchor=%22middle%22%3E34%3C/text%3E%3C/svg%3E">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://ardaduhaardali.com/#arda","name":"Arda Duha Ardalı","alternateName":"Arda Duha Ardalı #34","url":"https://ardaduhaardali.com/","image":"https://ardaduhaardali.com/media/f4a8608726.jpg","jobTitle":"Basketbolcu","description":"Anadolu Efes altyapı oyuncusu, uzun forvet, #34.","height":{"@type":"QuantitativeValue","value":2.00,"unitCode":"MTR"},"memberOf":{"@type":"SportsTeam","name":"Anadolu Efes U16B","sport":"Basketbol"},"sameAs":["https://www.youtube.com/@bahadirardali","https://www.instagram.com/ardaduhaardali/"]},{"@type":"WebSite","@id":"https://ardaduhaardali.com/#website","url":"https://ardaduhaardali.com/","name":"Arda Duha Ardalı","inLanguage":"tr","about":{"@id":"https://ardaduhaardali.com/#arda"}},{"@type":"ProfilePage","@id":"https://ardaduhaardali.com/#profile","url":"https://ardaduhaardali.com/","name":"Arda Duha Ardalı · #34 · Anadolu Efes · Basketbol","isPartOf":{"@id":"https://ardaduhaardali.com/#website"},"mainEntity":{"@id":"https://ardaduhaardali.com/#arda"},"dateModified":"2026-11-21"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://ardaduhaardali.com/#arda","name":"Arda Duha Ardalı","alternateName":"Arda Duha Ardalı #34","url":"https://ardaduhaardali.com/","image":"https://ardaduhaardali.com/media/f4a8608726.jpg","jobTitle":"Basketbolcu","description":"Anadolu Efes altyapı oyuncusu, uzun forvet, #34.","height":{"@type":"QuantitativeValue","value":2.00,"unitCode":"MTR"},"memberOf":{"@type":"SportsTeam","name":"Anadolu Efes U16B","sport":"Basketbol"},"sameAs":["https://www.youtube.com/@bahadirardali","https://www.instagram.com/ardaduhaardali/"]},{"@type":"WebSite","@id":"https://ardaduhaardali.com/#website","url":"https://ardaduhaardali.com/","name":"Arda Duha Ardalı","inLanguage":"tr","about":{"@id":"https://ardaduhaardali.com/#arda"}},{"@type":"ProfilePage","@id":"https://ardaduhaardali.com/#profile","url":"https://ardaduhaardali.com/","name":"Arda Duha Ardalı · #34 · Anadolu Efes · Basketbol","isPartOf":{"@id":"https://ardaduhaardali.com/#website"},"mainEntity":{"@id":"https://ardaduhaardali.com/#arda"},"dateModified":"2026-11-22"}]}</script>
 <link rel="me" href="https://www.youtube.com/@bahadirardali">
 <link rel="me" href="https://www.instagram.com/ardaduhaardali/">
 <meta property="og:site_name" content="Arda Duha Ardalı">
@@ -485,6 +485,14 @@ header#top.solid{backdrop-filter:saturate(140%) blur(10px);-webkit-backdrop-filt
 footer{border-top:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(6,20,48,0),rgba(6,20,48,.6))}
 .video-grid:not(.shorts) .vcard .meta b{font-size:16px;line-height:1.15}
 .video-grid:not(.shorts) .vcard .play{top:40%!important;transform:translate(-50%,-50%) scale(.82)!important}
+/* bölüm numaraları */
+body{counter-reset:sec}
+section[id]{counter-increment:sec}
+section[id] .eyebrow::before{content:counter(sec,decimal-leading-zero)!important;width:auto!important;height:auto!important;background:none!important;color:#fff;font-weight:800;letter-spacing:.06em;padding-right:12px;margin-right:2px;border-right:2px solid var(--red);line-height:1}
+#hakkinda .eyebrow::before{color:var(--navy)}
+#styleHead::before{display:none}
+.lead{max-width:640px;line-height:1.6}
+h2.title{margin-bottom:12px}
 /* mobil düzeltmeler */
 #videoArea2 .video-grid:not(.shorts) .vcard img{object-position:center 18%}
 html,body{overflow-x:hidden}
@@ -512,7 +520,17 @@ html,body{overflow-x:hidden}
 .lang-sw button{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.06em;min-width:34px;height:28px;padding:0 8px;border-radius:6px;cursor:pointer;background:transparent;color:#C9D6EE;border:1.5px solid #4D6A9C;transition:.2s}
 .lang-sw button.on{background:#F3D9A6;border-color:#F3D9A6;color:#0B1A33}
 .lang-sw button:not(.on):hover{border-color:#fff;color:#fff}
-@media (min-width:1181px){.lang-sw{margin-left:0;margin-right:0;order:5}.nav .brand{font-size:20px}.nav .menu{gap:14px;font-size:11.5px;letter-spacing:.08em}}
+/* üst menü: tıklanabilir hap butonlar */
+.nav .menu a{display:inline-flex;align-items:center;padding:9px 15px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);color:#e6ecf8!important;transition:background .2s,border-color .2s,transform .2s,color .2s}
+.nav .menu a:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.5);color:#fff!important;transform:translateY(-1px)}
+.nav .menu a.on{background:linear-gradient(135deg,#e3192e,#b80f20);border-color:transparent;color:#fff!important;box-shadow:0 6px 18px rgba(215,25,46,.35)}
+.nav .menu a.on::after{display:none!important}
+.nav-social{display:flex;gap:8px;align-items:center}
+.nav-social a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#fff;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);transition:.2s}
+.nav-social a:hover{background:var(--red);border-color:var(--red);transform:translateY(-1px)}
+@media (min-width:1181px){.nav{gap:16px!important}.lang-sw{margin-left:0;margin-right:0;order:6}.nav-social{order:5;margin-left:auto}.nav .brand{font-size:20px}.nav .menu{gap:8px;font-size:13.5px;letter-spacing:.06em;margin-left:auto}}
+.menu-social{display:none}
+@media (max-width:1180px){.nav-social{display:none}.menu.open .menu-social{display:flex;gap:10px;margin-top:6px}.nav .menu .menu-social a{flex:1;justify-content:center;gap:8px;background:rgba(255,255,255,.08)}.nav .menu.open{gap:10px}.nav .menu.open a{justify-content:flex-start}}
 @media (min-width:981px) and (max-width:1180px){
   .menu{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:var(--navy-deep);padding:20px 24px;gap:18px;border-bottom:1px solid var(--line)}
   .menu.open{display:flex}.burger{display:block}}
@@ -532,7 +550,9 @@ html,body{overflow-x:hidden}
       <a data-t="nav4" href="#kariyer">Kariyer ve Başarılar</a>
       <a data-t="nav5" href="#galeri">Maçlar ve Fotoğraflar</a>
       <a data-t="nav6" href="#iletisim">İletişim</a>
+      <div class="menu-social"><a href="https://www.instagram.com/ardaduhaardali/" target="_blank" rel="noopener me" aria-label="Instagram" title="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><span>Instagram</span></a><a href="https://www.youtube.com/@bahadirardali" target="_blank" rel="noopener me" aria-label="YouTube" title="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg><span>YouTube</span></a></div>
     </nav>
+    <div class="nav-social"><a href="https://www.instagram.com/ardaduhaardali/" target="_blank" rel="noopener me" aria-label="Instagram" title="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a href="https://www.youtube.com/@bahadirardali" target="_blank" rel="noopener me" aria-label="YouTube" title="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg></a></div>
     <button class="burger" id="burger" aria-label="Menü">☰</button>
   </div>
 </header>
@@ -782,7 +802,7 @@ const DEF = {
    "d": "Okul takımında forma giymeye devam ediyor; 2025–26'da Ortaokullar Türkiye Şampiyonu oldu (U14).",
    "now": true,
    "t": "Okyanus Koleji",
-   "y": "2025–Bugün"
+   "y": "2025 – Günümüz"
   },
   {
    "d": "Şu anda Anadolu Efes U16B takımında oynuyor (İstanbul U16 Erkekler Ligi).",
@@ -813,7 +833,7 @@ const DEF = {
  ],
  "facts": [
   {
-   "k": "Güncel takım",
+   "k": "Takım",
    "v": "Anadolu Efes U16B"
   },
   {
@@ -825,23 +845,23 @@ const DEF = {
    "v": "2,00 m"
   },
   {
-   "k": "Kullandığı el",
+   "k": "Kullandığı El",
    "v": "Sol"
   },
   {
-   "k": "Önceki kulüp",
+   "k": "Önceki Kulüp",
    "v": "Eyüp Basket SK"
   },
   {
-   "k": "Anadolu Efes'e geliş",
+   "k": "Anadolu Efes'e Geliş",
    "v": "2023 · transfer"
   },
   {
-   "k": "Doğum yılı",
+   "k": "Doğum Yılı",
    "v": "2012"
   },
   {
-   "k": "Organizasyonlar",
+   "k": "Ligler",
    "v": "İstanbul U16 Erkekler, EYBL U15"
   }
  ],
@@ -884,10 +904,10 @@ const DEF = {
   }
  ],
  "general": {
-  "bio": "Anadolu Efes altyapısında basketbol oynayan genç sporcu. Eyüp Basket Spor Kulübü altyapısında yetişti ve 2023'te U12 kategorisinde Anadolu Efes'e katıldı. 2 metre boyunda, sol elini kullanan bir uzun forvet. Efes'te U12, U13, U14, ve U16B takımlarında forma giydi; 2025–26 sezonunda İstanbul U14 Ligi'ni ve U14 Türkiye Şampiyonası'nı namağlup kazanan kadroda yer aldı. Şu anda Anadolu Efes U16B takımında ve Okyanus Koleji okul takımında oynuyor.",
+  "bio": "2012 doğumlu Arda Duha Ardalı, 2,00 m boyunda, sol elini kullanan bir uzun forvettir. Basketbola Eyüp Basket altyapısında başladı ve 2023'te U12 kategorisinde Anadolu Efes'e transfer oldu. Efes forması altında U12, U13, U14 ve U16B takımlarında oynadı; 2025–26 sezonunda İstanbul U14 Ligi'ni ve U14 Türkiye Şampiyonası'nı namağlup kazanan kadroda yer aldı. Bugün Anadolu Efes U16B takımında ve Okyanus Koleji okul takımında forma giyiyor.",
   "born": "2012",
   "city": "İstanbul, Türkiye",
-  "contactText": "Kulüp, scout ve kamp davetleri için ailesiyle iletişime geçebilirsiniz.",
+  "contactText": "Kulüp, scout, kamp ve turnuva davetleri için aile ile iletişime geçebilirsiniz.",
   "email": "iletisim@bahadirardali.com",
   "first": "Arda Duha Ardalı",
   "hand": "Sol",
@@ -916,22 +936,22 @@ const DEF = {
    "v": "10"
   },
   {
-   "l": "Sayı / maç",
+   "l": "Sayı / Maç",
    "s": "SAY",
    "v": "3.2"
   },
   {
-   "l": "Ribaund / maç",
+   "l": "Ribaund / Maç",
    "s": "RB",
    "v": "3.8"
   },
   {
-   "l": "Asist / maç",
+   "l": "Asist / Maç",
    "s": "AS",
    "v": "1.1"
   },
   {
-   "l": "Blok / maç",
+   "l": "Blok / Maç",
    "s": "BLK",
    "v": "0.6"
   }
@@ -1514,40 +1534,40 @@ const DEF = {
  "skills": [],
  "styleTags": [],
  "texts": {
-  "aEy": "",
+  "aEy": "Oyuncu Profili",
   "aStyle": "Oyun Stili",
-  "cEy": "Kariyer ve Başarılar",
-  "cLe": "Eyüp Basket'ten Anadolu Efes'e uzanan basketbol yolculuğu.",
+  "cEy": "Kariyer",
+  "cLe": "Eyüp Basket altyapısından Anadolu Efes'e uzanan gelişim yolculuğu.",
   "cTi": "Kariyer Geçmişi",
-  "gEy": "Maçlar ve Fotoğraflar",
-  "gLe": "Maç günlerinden ve turnuvalardan kareler.",
+  "gEy": "Galeri",
+  "gLe": "Maç günlerinden, turnuvalardan ve şampiyonluk anlarından kareler.",
   "gT0": "Tümü",
   "gT1": "Maç",
-  "gTi": "Galeri",
+  "gTi": "Fotoğraflar",
   "hTi": "Şampiyonluklar ve Ödüller",
   "hero2Style": "",
   "heroBtn1": "▶ Videoları İzle",
-  "heroBtn2": "İletişime Geç",
-  "hlTi": "Öne Çıkan Performanslar",
-  "kBtn": "İletişime Geçmek İçin Tıkla →",
+  "heroBtn2": "İletişim",
+  "hlTi": "Sezonun Öne Çıkan Maçları",
+  "kBtn": "İletişim Formunu Aç →",
   "kEy": "İletişim",
-  "kTi": "Bizimle İletişime Geçin",
-  "nav1": "Bu Sezon",
-  "nav2": "Highlights ve Videolar",
+  "kTi": "İletişime Geçin",
+  "nav1": "İstatistikler",
+  "nav2": "Videolar",
   "nav3": "Hakkında",
-  "nav4": "Kariyer ve Başarılar",
-  "nav5": "Maçlar ve Fotoğraflar",
+  "nav4": "Kariyer",
+  "nav5": "Galeri",
   "nav6": "İletişim",
-  "sEy": "Bu Sezon",
-  "sLe": "Resmi TBF verileriyle maç ve sezon istatistikleri.",
+  "sEy": "2026–27 Sezonu",
+  "sLe": "Türkiye Basketbol Federasyonu (TBF) resmi verileriyle maç maç performans ve sezon ortalamaları.",
   "sTi": "Sezon İstatistikleri",
   "scroll": "",
-  "vEy": "Highlights ve Videolar",
-  "vLe": "Maç özetleri, öne çıkan anlar ve tam maç kayıtları.",
+  "vEy": "Videolar",
+  "vLe": "Tam maç kayıtları ve sahadan öne çıkan anlar.",
   "vT1": "Klipler",
   "vT2": "Maçlar",
   "vT3": "Highlights",
-  "vTi": "Sahada ARDA DUHA "
+  "vTi": "Maç Görüntüleri"
  }
 };
 
@@ -2178,7 +2198,7 @@ const EN={
 "E-posta":"Email","Konum":"Location","İstanbul, Türkiye":"Istanbul, Türkiye","İletişime Geçmek İçin Tıkla →":"Click to Get in Touch →",
 "Scout / Değerlendirme":"Scouting / Evaluation","Kamp Daveti":"Camp Invitation","Turnuva Daveti":"Tournament Invitation","Kulüp Teklifi":"Club Offer","Basın":"Press","Diğer":"Other","Gönder":"Send","Konu":"Subject",
 "+1 dk":"+1 min","YouTube’da aç ↗":"Open on YouTube ↗","YouTube’da izle":"Watch on YouTube",
-"Anadolu Efes B – Teşvikiye A":"Anadolu Efes B vs Teşvikiye A","Menü":"Menu","Ad Soyad":"Full name","Mesajınız":"Your message","Kapat":"Close","Yönetim paneli":"Admin panel"
+"Anadolu Efes B – Teşvikiye A":"Anadolu Efes B vs Teşvikiye A","İstatistikler":"Statistics","Videolar":"Videos","Kariyer":"Career","Fotoğraflar":"Photos","Oyuncu Profili":"Player Profile","2026–27 Sezonu":"2026–27 Season","Türkiye Basketbol Federasyonu (TBF) resmi verileriyle maç maç performans ve sezon ortalamaları.":"Game-by-game performance and season averages from official Turkish Basketball Federation (TBF) data.","Sezonun Öne Çıkan Maçları":"Season Standout Games","Maç Görüntüleri":"Game Footage","Tam maç kayıtları ve sahadan öne çıkan anlar.":"Full game recordings and standout moments on court.","Eyüp Basket altyapısından Anadolu Efes'e uzanan gelişim yolculuğu.":"A development journey from the Eyüp Basket youth program to Anadolu Efes.","Maç günlerinden, turnuvalardan ve şampiyonluk anlarından kareler.":"Moments from game days, tournaments and championship celebrations.","İletişime Geçin":"Get in Touch","İletişim Formunu Aç →":"Open Contact Form →","2012 doğumlu Arda Duha Ardalı, 2,00 m boyunda, sol elini kullanan bir uzun forvettir. Basketbola Eyüp Basket altyapısında başladı ve 2023'te U12 kategorisinde Anadolu Efes'e transfer oldu. Efes forması altında U12, U13, U14 ve U16B takımlarında oynadı; 2025–26 sezonunda İstanbul U14 Ligi'ni ve U14 Türkiye Şampiyonası'nı namağlup kazanan kadroda yer aldı. Bugün Anadolu Efes U16B takımında ve Okyanus Koleji okul takımında forma giyiyor.":"Born in 2012, Arda Duha Ardalı is a 2.00 m (6'7\") left-handed power forward. He started basketball in the Eyüp Basket youth program and joined Anadolu Efes at U12 level in 2023. With Efes he has played for the U12, U13, U14 and U16B teams, and was part of the squad that won both the Istanbul U14 League and the U14 Turkish Championship unbeaten in 2025–26. He currently plays for Anadolu Efes U16B and for the Okyanus College school team.","Kulüp, scout, kamp ve turnuva davetleri için aile ile iletişime geçebilirsiniz.":"For club, scouting, camp and tournament invitations, please contact the family.","Takım":"Team","Kullandığı El":"Shooting Hand","Önceki Kulüp":"Previous Club","Anadolu Efes'e Geliş":"Joined Anadolu Efes","Doğum Yılı":"Year of Birth","Ligler":"Leagues","2025 – Günümüz":"2025 – Present","Sayı / Maç":"Points / Game","Ribaund / Maç":"Rebounds / Game","Asist / Maç":"Assists / Game","Blok / Maç":"Blocks / Game","Menü":"Menu","Ad Soyad":"Full name","Mesajınız":"Your message","Kapat":"Close","Yönetim paneli":"Admin panel"
 };
 const RX=[
  [/^(\d+\/\d+) %(\d+)$/,"$1 $2%"],
