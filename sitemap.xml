@@ -1,4 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ardaduhaardali.com/</loc><lastmod>2026-11-21</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://ardaduhaardali.com/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <image:image><image:loc>https://ardaduhaardali.com/media/f4a8608726.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/20ab760d5c.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/37cc9c18b4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/486af7468a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/4f1db4c2af.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/5608b4fa20.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/5899e8132a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/6257e383db.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/797cb357e8.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/7ee9c59e3c.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/83bfc55d78.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/8715f93eba.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/8ca5e78bcc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/9323615fdd.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/a04bcfa536.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/a2829e430c.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/b0094cd662.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/c5aef0875c.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/c75de97b95.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/d3386e378a.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/d41a46a153.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/d792ead31b.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/d814faf630.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/dc2c8b4408.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/e35ed20e7f.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ardaduhaardali.com/media/ee11bfd3ad.jpg</image:loc></image:image>
+  </url>
 </urlset>
