@@ -550,6 +550,44 @@ html,body{overflow-x:hidden}
   .menu.open{display:flex}.burger{display:block}}
 @media (max-width:420px){.nav .brand{font-size:14px;gap:8px;letter-spacing:.02em}.nav .brand .num{width:32px;height:32px;font-size:14px}.nav .burger{font-size:22px;padding:0}.lang-sw{gap:4px;margin-right:10px}.lang-sw button{min-width:30px;height:26px;font-size:11px;padding:0 6px}}
 </style>
+<style>
+.vz{display:grid;grid-template-columns:1.35fr 1fr;gap:18px;margin-top:22px}
+.vz-card{background:linear-gradient(160deg,rgba(31,95,191,.16),rgba(3,12,30,.5));border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:24px 26px;position:relative;overflow:hidden}
+.vz-card::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),#1F5FBF)}
+.vz-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:14px}
+.vz-h h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:20px;letter-spacing:.03em;margin:0}
+.vz-h span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--silver)}
+.vz-leg{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-size:12px;color:var(--silver)}
+.vz-leg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.vz .s0{background:#4C7BD9}.vz .s1{background:#9FB6E8}.vz .s2{background:linear-gradient(90deg,#E3192E,#FF5A6A)}
+.vz-m{padding:10px 0;border-top:1px solid rgba(255,255,255,.07)}
+.vz-ml{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.vz-b{display:grid;grid-template-columns:70px 1fr 40px;align-items:center;gap:10px;font-size:12px;color:var(--silver);margin:4px 0}
+.vz-bt{height:8px;background:rgba(255,255,255,.07);border-radius:4px;overflow:hidden}
+.vz-bt i{display:block;height:100%;width:0;border-radius:4px;transition:width 1.1s cubic-bezier(.2,.7,.2,1)}
+.vz.in .vz-bt i{width:var(--w)}
+.vz-bv{text-align:right;color:#fff;font-weight:600}
+.vz-shoot{display:flex;flex-direction:column}.vz-shoot .vz-h{margin-bottom:0}.vz-shoot .vz-court{margin:auto auto 26px}
+.vz-court{display:block;width:100%;max-width:420px;margin:18px auto;stroke:rgba(255,255,255,.22);stroke-width:1.5}
+.vz-court .hot{fill:rgba(215,25,46,.18);stroke:rgba(255,90,106,.6)}.vz-court .arc{stroke:rgba(76,123,217,.75);stroke-width:2.5}
+.vz-rings{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:auto}
+.vz-ring{position:relative;text-align:center}
+.vz-ring svg{width:100%;max-width:120px;transform:rotate(-90deg)}
+.vz-trk{fill:none;stroke:rgba(255,255,255,.08);stroke-width:9}
+.vz-val{fill:none;stroke:url(#vzg);stroke:#E3192E;stroke-width:9;stroke-linecap:round;transition:stroke-dashoffset 1.3s cubic-bezier(.2,.7,.2,1)}
+.vz-ring:nth-child(2) .vz-val{stroke:#4C7BD9}.vz-ring:nth-child(3) .vz-val{stroke:#F3D9A6}
+.vz-rc{position:absolute;left:0;right:0;top:0;aspect-ratio:1;max-width:120px;margin:0 auto;display:grid;place-items:center}
+.vz-rc b{font-family:var(--display);font-weight:800;font-size:28px}.vz-rc i{font-style:normal;font-size:13px;color:var(--silver);margin-left:1px}
+.vz-rc{grid-auto-flow:column;align-content:center;justify-content:center;align-items:baseline}
+.vz-rl{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-top:8px}
+.vz-rl small{display:block;font-family:inherit;font-weight:500;letter-spacing:.04em;color:var(--silver);text-transform:none;margin-top:2px}
+#sezon,#kariyer,#videolar,#galeri{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 900' fill='none' stroke='%23ffffff' stroke-opacity='.035' stroke-width='2'%3E%3Crect x='40' y='40' width='1360' height='820'/%3E%3Cline x1='720' y1='40' x2='720' y2='860'/%3E%3Ccircle cx='720' cy='450' r='110'/%3E%3Cpath d='M40 160 H230 A290 290 0 0 1 230 740 H40'/%3E%3Crect x='40' y='330' width='270' height='240'/%3E%3Cpath d='M1400 160 H1210 A290 290 0 0 0 1210 740 H1400'/%3E%3Crect x='1130' y='330' width='270' height='240'/%3E%3C/svg%3E");background-size:cover;background-position:center}
+#hakkinda{overflow:hidden}
+#hakkinda::before{content:"34";position:absolute;right:-2vw;top:50%;transform:translateY(-50%);font-family:var(--display);font-weight:900;font-size:min(46vw,620px);line-height:.8;color:transparent;-webkit-text-stroke:2px rgba(10,42,102,.07);pointer-events:none;z-index:0;letter-spacing:-.02em}
+#hakkinda>.wrap{position:relative;z-index:1}
+@media (max-width:860px){.vz{grid-template-columns:1fr}.vz-card{padding:20px}.vz-rc b{font-size:22px}}
+</style>
+
 </head>
 <body>
 
@@ -2205,6 +2243,57 @@ addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='
 })();
 </script>
 <script>(function(){
+const EN=()=>document.documentElement.lang==='en';
+const L=(tr,en)=>EN()?en:tr;
+const num=v=>{if(typeof v==='number')return v;const s=String(v||'');if(s.includes(':')){const[a,b]=s.split(':');return +a+(+b)/60}return parseFloat(s.replace(',','.'))||0};
+const frac=v=>{const m=String(v||'').match(/(\d+)\s*\/\s*(\d+)/);return m?[+m[1],+m[2]]:[0,0]};
+function agg(se){
+  const rows=(se&&se.rows)||[];let G=0;const t={pts:0,reb:0,ast:0,blk:0,stl:0,eff:0,min:0};const sh={p2:[0,0],p3:[0,0],ft:[0,0]};
+  rows.forEach(r=>{const g=num(r.g)||1;G+=g;for(const k in t)t[k]+=num(r[k])*g;for(const k in sh){const[a,b]=frac(r[k]);sh[k][0]+=a;sh[k][1]+=b}});
+  const a={};for(const k in t)a[k]=G?t[k]/G:0;return {G,a,sh};
+}
+function seasons(){try{return (typeof S!=='undefined'&&S.seasons)||[]}catch(e){return []}}
+function curIdx(){const tabs=[...document.querySelectorAll('#seasonTabs .tab')];const i=tabs.findIndex(t=>t.classList.contains('on'));return i<0?0:i}
+function ring(p,label,sub){
+  const r=46,c=2*Math.PI*r,off=c*(1-Math.min(1,p/100));
+  return `<div class="vz-ring"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="${r}" class="vz-trk"/><circle cx="60" cy="60" r="${r}" class="vz-val" stroke-dasharray="${c.toFixed(1)}" stroke-dashoffset="${c.toFixed(1)}" data-off="${off.toFixed(1)}"/></svg><div class="vz-rc"><b data-n="${Math.round(p)}">0</b><i>%</i></div><div class="vz-rl">${label}<small>${sub}</small></div></div>`;
+}
+function render(){
+  const host=document.getElementById('vizBlock');if(!host)return;
+  const ss=seasons();if(!ss.length){host.innerHTML='';return}
+  const A=ss.map(s=>({name:s.name,...agg(s)})).reverse();
+  const metrics=[['pts',L('Sayı','Points')],['reb',L('Ribaund','Rebounds')],['ast',L('Asist','Assists')],['blk',L('Blok','Blocks')],['eff',L('Verimlilik','Efficiency')]];
+  const bars=metrics.map(([k,lab])=>{const mx=Math.max(1,...A.map(x=>x.a[k]));return `<div class="vz-m"><div class="vz-ml">${lab}</div>${A.map((x,i)=>`<div class="vz-b"><span class="vz-bn">${x.name.split('·')[0].trim()}</span><span class="vz-bt"><i class="s${i}" style="--w:${Math.max(2,100*Math.max(0,x.a[k])/mx).toFixed(1)}%"></i></span><span class="vz-bv">${x.a[k].toFixed(1)}</span></div>`).join('')}</div>`}).join('');
+  const cur=agg(ss[curIdx()]);const pc=([a,b])=>b?100*a/b:0;
+  host.innerHTML=`<div class="vz-card vz-bars"><div class="vz-h"><h3>${L('Sezon Karşılaştırması','Season Comparison')}</h3><span>${L('Maç başına ortalama','Per-game average')}</span></div><div class="vz-leg">${A.map((x,i)=>`<span><i class="s${i}"></i>${x.name}</span>`).join('')}</div>${bars}</div>
+  <div class="vz-card vz-shoot"><div class="vz-h"><h3>${L('Şut Yüzdeleri','Shooting')}</h3><span>${ss[curIdx()].name}</span></div>
+  <svg class="vz-court" viewBox="0 0 300 160" fill="none"><rect x="2" y="2" width="296" height="156" rx="4"/><path d="M30 2 V40 A120 120 0 0 0 270 40 V2" class="arc"/><rect x="105" y="2" width="90" height="70" class="hot"/><circle cx="150" cy="72" r="26"/><circle cx="150" cy="18" r="6"/><line x1="132" y1="10" x2="168" y2="10"/></svg>
+  <div class="vz-rings">${ring(pc(cur.sh.p2),L('2 Sayı','2PT'),`${cur.sh.p2[0]}/${cur.sh.p2[1]}`)}${ring(pc(cur.sh.p3),L('3 Sayı','3PT'),`${cur.sh.p3[0]}/${cur.sh.p3[1]}`)}${ring(pc(cur.sh.ft),L('Serbest Atış','Free Throws'),`${cur.sh.ft[0]}/${cur.sh.ft[1]}`)}</div></div>`;
+  animate(host);
+}
+function countUp(el){const to=parseFloat(el.dataset.n);if(isNaN(to))return;const dec=(el.dataset.n.split('.')[1]||'').length;const t0=performance.now(),d=1100;const step=t=>{const k=Math.min(1,(t-t0)/d),e=1-Math.pow(1-k,3);el.textContent=(to*e).toFixed(dec);if(k<1)requestAnimationFrame(step)};requestAnimationFrame(step)}
+function animate(host){
+  const go=()=>{host.querySelectorAll('.vz-val').forEach(c=>c.style.strokeDashoffset=c.dataset.off);host.querySelectorAll('[data-n]').forEach(countUp);host.classList.add('in')};
+  if(!('IntersectionObserver' in window))return go();
+  const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){io.disconnect();go()}},{threshold:.25});io.observe(host);
+}
+function glance(){
+  const g=document.getElementById('glance');if(!g||g.dataset.vz)return;g.dataset.vz=1;
+  const vs=[...g.querySelectorAll('.v')];
+  vs.forEach(v=>{const n=v.firstChild;if(!n||n.nodeType!==3)return;const s=n.nodeValue.trim();if(!/^\d+(\.\d+)?$/.test(s))return;const sp=document.createElement('span');sp.dataset.n=s;sp.textContent=s;v.replaceChild(sp,n)});
+  const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){io.disconnect();g.querySelectorAll('[data-n]').forEach(countUp)}},{threshold:.4});io.observe(g);
+}
+function init(){
+  const tw=document.querySelector('#sezon .table-wrap');if(!tw||document.getElementById('vizBlock'))return;
+  const d=document.createElement('div');d.id='vizBlock';d.className='vz reveal in';tw.insertAdjacentElement('afterend',d);
+  render();glance();
+  const st=document.getElementById('seasonTabs');if(st)st.addEventListener('click',()=>setTimeout(render,30));
+  document.addEventListener('click',e=>{if(e.target.closest('.lang-sw'))setTimeout(render,30)});
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(init,50));else setTimeout(init,50);
+})();
+</script>
+<script>(function(){
 const EN={
 "Bu Sezon":"This Season","Highlights ve Videolar":"Highlights & Videos","Hakkında":"About","Kariyer ve Başarılar":"Career & Honours","Maçlar ve Fotoğraflar":"Games & Photos","İletişim":"Contact",
 "Uzun Forvet":"Power Forward","Uzun Forvet (PF)":"Power Forward (PF)",
@@ -2248,7 +2337,7 @@ const EN={
 "E-posta":"Email","Konum":"Location","İstanbul, Türkiye":"Istanbul, Türkiye","İletişime Geçmek İçin Tıkla →":"Click to Get in Touch →",
 "Scout / Değerlendirme":"Scouting / Evaluation","Kamp Daveti":"Camp Invitation","Turnuva Daveti":"Tournament Invitation","Kulüp Teklifi":"Club Offer","Basın":"Press","Diğer":"Other","Gönder":"Send","Konu":"Subject",
 "+1 dk":"+1 min","YouTube’da aç ↗":"Open on YouTube ↗","YouTube’da izle":"Watch on YouTube",
-"Anadolu Efes B – Teşvikiye A":"Anadolu Efes B vs Teşvikiye A","İstatistikler":"Statistics","Videolar":"Videos","Kariyer":"Career","Fotoğraflar":"Photos","Oyuncu Profili":"Player Profile","2026–27 Sezonu":"2026–27 Season","Türkiye Basketbol Federasyonu (TBF) resmi verileriyle maç maç performans ve sezon ortalamaları.":"Game-by-game performance and season averages from official Turkish Basketball Federation (TBF) data.","Sezonun Öne Çıkan Maçları":"Season Standout Games","Maç Görüntüleri":"Game Footage","Tam maç kayıtları ve sahadan öne çıkan anlar.":"Full game recordings and standout moments on court.","Eyüp Basket altyapısından Anadolu Efes'e uzanan gelişim yolculuğu.":"A development journey from the Eyüp Basket youth program to Anadolu Efes.","Maç günlerinden, turnuvalardan ve şampiyonluk anlarından kareler.":"Moments from game days, tournaments and championship celebrations.","İletişime Geçin":"Get in Touch","İletişim Formunu Aç →":"Open Contact Form →","2012 doğumlu Arda Duha Ardalı, 2,00 m boyunda, sol elini kullanan bir uzun forvettir. Basketbola Eyüp Basket altyapısında başladı ve 2023'te U12 kategorisinde Anadolu Efes'e transfer oldu. Efes forması altında U12, U13, U14 ve U16B takımlarında oynadı; 2025–26 sezonunda İstanbul U14 Ligi'ni ve U14 Türkiye Şampiyonası'nı namağlup kazanan kadroda yer aldı. Bugün Anadolu Efes U16B takımında ve Okyanus Koleji okul takımında forma giyiyor.":"Born in 2012, Arda Duha Ardalı is a 2.00 m (6'7\") left-handed power forward. He started basketball in the Eyüp Basket youth program and joined Anadolu Efes at U12 level in 2023. With Efes he has played for the U12, U13, U14 and U16B teams, and was part of the squad that won both the Istanbul U14 League and the U14 Turkish Championship unbeaten in 2025–26. He currently plays for Anadolu Efes U16B and for the Okyanus College school team.","Kulüp, scout, kamp ve turnuva davetleri için aile ile iletişime geçebilirsiniz.":"For club, scouting, camp and tournament invitations, please contact the family.","Takım":"Team","Kullandığı El":"Shooting Hand","Önceki Kulüp":"Previous Club","Anadolu Efes'e Geliş":"Joined Anadolu Efes","Doğum Yılı":"Year of Birth","Ligler":"Leagues","2025 – Günümüz":"2025 – Present","Sayı / Maç":"Points / Game","Ribaund / Maç":"Rebounds / Game","Asist / Maç":"Assists / Game","Blok / Maç":"Blocks / Game","Öne Çıkan Maçlar":"Standout Games","2026–27 sezonu · Kaynak: TBF resmi istatistikleri":"2026–27 season · Source: official TBF statistics","Tam maç kayıtları ve öne çıkan anlar.":"Full game recordings and highlights.","Anadolu Efes – Pamukspor":"Anadolu Efes vs Pamukspor","Menü":"Menu","Ad Soyad":"Full name","Mesajınız":"Your message","Kapat":"Close","Yönetim paneli":"Admin panel"
+"Anadolu Efes B – Teşvikiye A":"Anadolu Efes B vs Teşvikiye A","İstatistikler":"Statistics","Videolar":"Videos","Kariyer":"Career","Fotoğraflar":"Photos","Oyuncu Profili":"Player Profile","2026–27 Sezonu":"2026–27 Season","Türkiye Basketbol Federasyonu (TBF) resmi verileriyle maç maç performans ve sezon ortalamaları.":"Game-by-game performance and season averages from official Turkish Basketball Federation (TBF) data.","Sezonun Öne Çıkan Maçları":"Season Standout Games","Maç Görüntüleri":"Game Footage","Tam maç kayıtları ve sahadan öne çıkan anlar.":"Full game recordings and standout moments on court.","Eyüp Basket altyapısından Anadolu Efes'e uzanan gelişim yolculuğu.":"A development journey from the Eyüp Basket youth program to Anadolu Efes.","Maç günlerinden, turnuvalardan ve şampiyonluk anlarından kareler.":"Moments from game days, tournaments and championship celebrations.","İletişime Geçin":"Get in Touch","İletişim Formunu Aç →":"Open Contact Form →","2012 doğumlu Arda Duha Ardalı, 2,00 m boyunda, sol elini kullanan bir uzun forvettir. Basketbola Eyüp Basket altyapısında başladı ve 2023'te U12 kategorisinde Anadolu Efes'e transfer oldu. Efes forması altında U12, U13, U14 ve U16B takımlarında oynadı; 2025–26 sezonunda İstanbul U14 Ligi'ni ve U14 Türkiye Şampiyonası'nı namağlup kazanan kadroda yer aldı. Bugün Anadolu Efes U16B takımında ve Okyanus Koleji okul takımında forma giyiyor.":"Born in 2012, Arda Duha Ardalı is a 2.00 m (6'7\") left-handed power forward. He started basketball in the Eyüp Basket youth program and joined Anadolu Efes at U12 level in 2023. With Efes he has played for the U12, U13, U14 and U16B teams, and was part of the squad that won both the Istanbul U14 League and the U14 Turkish Championship unbeaten in 2025–26. He currently plays for Anadolu Efes U16B and for the Okyanus College school team.","Kulüp, scout, kamp ve turnuva davetleri için aile ile iletişime geçebilirsiniz.":"For club, scouting, camp and tournament invitations, please contact the family.","Takım":"Team","Kullandığı El":"Shooting Hand","Önceki Kulüp":"Previous Club","Anadolu Efes'e Geliş":"Joined Anadolu Efes","Doğum Yılı":"Year of Birth","Ligler":"Leagues","2025 – Günümüz":"2025 – Present","Sayı / Maç":"Points / Game","Ribaund / Maç":"Rebounds / Game","Asist / Maç":"Assists / Game","Blok / Maç":"Blocks / Game","Öne Çıkan Maçlar":"Standout Games","2026–27 sezonu · Kaynak: TBF resmi istatistikleri":"2026–27 season · Source: official TBF statistics","Tam maç kayıtları ve öne çıkan anlar.":"Full game recordings and highlights.","Anadolu Efes – Pamukspor":"Anadolu Efes vs Pamukspor","Sezon Karşılaştırması":"Season Comparison","Maç başına ortalama":"Per-game average","Şut Yüzdeleri":"Shooting","Verimlilik":"Efficiency","Serbest Atış":"Free Throws","2 Sayı":"2PT","3 Sayı":"3PT","Ribaund":"Rebounds","Asist":"Assists","Blok":"Blocks","Menü":"Menu","Ad Soyad":"Full name","Mesajınız":"Your message","Kapat":"Close","Yönetim paneli":"Admin panel"
 };
 const RX=[
  [/^(\d+\/\d+) %(\d+)$/,"$1 $2%"],
