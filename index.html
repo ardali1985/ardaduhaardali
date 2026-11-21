@@ -446,6 +446,45 @@ td small{color:var(--muted);margin-left:4px;font-size:12px}
 .glance .g-item .l{color:#b9c7e6!important}
 .glance .g-item::before{content:"";position:absolute;left:26px;top:22px;width:22px;height:3px;background:var(--red);border-radius:2px}
 @media (max-width:760px){.glance .g-item::before{left:12px;top:12px;width:16px}}
+/* ===== profesyonel görünüm katmanı ===== */
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--red);color:#fff}
+.eyebrow{display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--red);border-radius:2px}
+h2.title{letter-spacing:.005em}
+section+section{border-top:1px solid rgba(255,255,255,.04)}
+header#top.solid{backdrop-filter:saturate(140%) blur(10px);-webkit-backdrop-filter:saturate(140%) blur(10px);background:rgba(6,20,48,.82)!important;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.btn{border-radius:10px!important;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-red{background:linear-gradient(135deg,#e3192e,#b80f20)!important;box-shadow:0 10px 26px rgba(215,25,46,.35)}
+.btn-red:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(215,25,46,.45)}
+.btn-ghost{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);background:rgba(255,255,255,.06)!important}
+.btn-ghost:hover{transform:translateY(-2px)}
+.bio-strip{border-radius:14px!important;overflow:hidden;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:rgba(6,20,48,.55)!important;border:1px solid rgba(255,255,255,.12)!important}
+.team-tag{border-radius:999px!important;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.tab{border-radius:999px!important;padding:10px 20px!important}
+.tab.on{box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.vcard{border-radius:14px!important;border:1px solid rgba(255,255,255,.08)!important;box-shadow:0 14px 34px rgba(0,0,0,.35);transition:transform .3s,box-shadow .3s}
+.vcard:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(0,0,0,.45)}
+.vcard .shade{background:linear-gradient(180deg,rgba(3,12,30,0) 35%,rgba(3,12,30,.55) 62%,rgba(3,12,30,.95))!important}
+.vcard .meta b{font-size:20px;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.vcard .meta span{display:inline-block;margin-top:6px;font-family:var(--display);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:11.5px;color:#fff;background:rgba(215,25,46,.9);padding:4px 9px;border-radius:999px}
+.yt-badge{border-radius:8px!important}
+.table-wrap{border-radius:14px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,.3)}
+.hl-card{border-radius:14px!important;box-shadow:0 12px 30px rgba(0,0,0,.28);transition:transform .25s}
+.hl-card:hover{transform:translateY(-3px)}
+.honour{border-radius:14px!important;background:linear-gradient(160deg,rgba(31,95,191,.16),rgba(3,12,30,.45))!important;border:1px solid rgba(255,255,255,.08)!important;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.honour::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),#f3d9a6)}
+.honour .ic{background:linear-gradient(135deg,rgba(243,217,166,.25),rgba(215,25,46,.2))!important;color:#f3d9a6!important}
+.gallery .gi,.gi{border-radius:12px;overflow:hidden}
+.gi img{transition:transform .5s}
+.gi:hover img{transform:scale(1.05)}
+.portrait{border-radius:16px;overflow:hidden;box-shadow:0 24px 50px rgba(6,23,51,.35)}
+.facts{border-top-width:3px!important;border-top-color:var(--red)!important}
+.contact,.cbar{border-radius:16px}
+.chip{border-radius:12px!important}
+footer{border-top:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(6,20,48,0),rgba(6,20,48,.6))}
+.video-grid:not(.shorts) .vcard .meta b{font-size:16px;line-height:1.15}
+.video-grid:not(.shorts) .vcard .play{top:40%!important;transform:translate(-50%,-50%) scale(.82)!important}
 /* mobil düzeltmeler */
 #videoArea2 .video-grid:not(.shorts) .vcard img{object-position:center 18%}
 html,body{overflow-x:hidden}
@@ -809,39 +848,39 @@ const DEF = {
  "games": [
   {
    "b": "",
-   "cover": "media/d395f1d43e.jpg",
+   "cover": "media/84c730bf31.jpg",
    "d": "",
-   "s": "Arda Duha Ardalı #34",
-   "t": "",
+   "s": "U16 · 1. Bölüm",
+   "t": "Anadolu Efes B – Teşvikiye A",
    "video": null,
-   "yt": "https://youtu.be/y_eihsOGzCs"
-  },
-  {
-   "b": "",
-   "cover": "media/6f13ed1546.jpg",
-   "d": "",
-   "s": "Arda Duha Ardalı #34",
-   "t": "",
-   "video": null,
-   "yt": "https://youtu.be/KUabFecOQTk"
+   "yt": "https://youtu.be/Ah2fcem5kZY"
   },
   {
    "b": "",
    "cover": "media/d4652091e4.jpg",
    "d": "",
-   "s": "Arda Duha Ardalı #34",
-   "t": "",
+   "s": "U16 · 2. Bölüm",
+   "t": "Anadolu Efes B – Teşvikiye A",
    "video": null,
    "yt": "https://youtu.be/hokoA6oPji0"
   },
   {
    "b": "",
-   "cover": "media/84c730bf31.jpg",
+   "cover": "media/6f13ed1546.jpg",
    "d": "",
-   "s": "Arda Duha Ardalı #34",
-   "t": "",
+   "s": "U16 · 3. Bölüm",
+   "t": "Anadolu Efes B – Teşvikiye A",
    "video": null,
-   "yt": "https://youtu.be/Ah2fcem5kZY"
+   "yt": "https://youtu.be/KUabFecOQTk"
+  },
+  {
+   "b": "",
+   "cover": "media/d395f1d43e.jpg",
+   "d": "",
+   "s": "U16 · 4. Bölüm",
+   "t": "Anadolu Efes B – Teşvikiye A",
+   "video": null,
+   "yt": "https://youtu.be/y_eihsOGzCs"
   }
  ],
  "general": {
@@ -2139,11 +2178,12 @@ const EN={
 "E-posta":"Email","Konum":"Location","İstanbul, Türkiye":"Istanbul, Türkiye","İletişime Geçmek İçin Tıkla →":"Click to Get in Touch →",
 "Scout / Değerlendirme":"Scouting / Evaluation","Kamp Daveti":"Camp Invitation","Turnuva Daveti":"Tournament Invitation","Kulüp Teklifi":"Club Offer","Basın":"Press","Diğer":"Other","Gönder":"Send","Konu":"Subject",
 "+1 dk":"+1 min","YouTube’da aç ↗":"Open on YouTube ↗","YouTube’da izle":"Watch on YouTube",
-"Menü":"Menu","Ad Soyad":"Full name","Mesajınız":"Your message","Kapat":"Close","Yönetim paneli":"Admin panel"
+"Anadolu Efes B – Teşvikiye A":"Anadolu Efes B vs Teşvikiye A","Menü":"Menu","Ad Soyad":"Full name","Mesajınız":"Your message","Kapat":"Close","Yönetim paneli":"Admin panel"
 };
 const RX=[
  [/^(\d+\/\d+) %(\d+)$/,"$1 $2%"],
  [/^%(\d+)$/,"$1%"],
+ [/^U16 · (\d)\. Bölüm$/,"U16 · Part $1"],
  [/^Daha fazla göster \((\d+)\)$/,"Show more ($1)"],
  [/^Başlangıç (\d+:\d\d)$/,"Start $1"],
  [/^© (\d{4}) (.+)\. Tüm hakları saklıdır\.$/,"© $1 $2. All rights reserved."]
