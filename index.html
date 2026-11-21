@@ -447,11 +447,12 @@ html,body{overflow-x:hidden}
 }
 </style>
 <style>
+#pnl,#editFab{display:none!important}
 .lang-sw{display:flex;gap:6px;margin-left:auto;margin-right:14px}
 .lang-sw button{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.06em;min-width:34px;height:28px;padding:0 8px;border-radius:6px;cursor:pointer;background:transparent;color:#C9D6EE;border:1.5px solid #4D6A9C;transition:.2s}
 .lang-sw button.on{background:#F3D9A6;border-color:#F3D9A6;color:#0B1A33}
 .lang-sw button:not(.on):hover{border-color:#fff;color:#fff}
-@media (min-width:1181px){.lang-sw{margin-left:0;margin-right:0;order:5}.nav .brand{font-size:20px}.nav .menu{gap:16px}}
+@media (min-width:1181px){.lang-sw{margin-left:0;margin-right:0;order:5}.nav .brand{font-size:20px}.nav .menu{gap:14px;font-size:11.5px;letter-spacing:.08em}}
 @media (min-width:981px) and (max-width:1180px){
   .menu{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:var(--navy-deep);padding:20px 24px;gap:18px;border-bottom:1px solid var(--line)}
   .menu.open{display:flex}.burger{display:block}}
@@ -465,9 +466,9 @@ html,body{overflow-x:hidden}
   <div class="wrap nav">
     <a href="#" class="brand"><span class="num" data-k="number">7</span><span data-k="first">Arda Duha</span></a>
     <nav class="menu" id="menu">
+      <a data-t="nav3" href="#hakkinda">Arda Duha Hakkında</a>
       <a data-t="nav1" href="#sezon">Bu Sezon</a>
       <a data-t="nav2" lang="en" href="#videolar">Highlights ve Videolar</a>
-      <a data-t="nav3" href="#hakkinda">Arda Duha Hakkında</a>
       <a data-t="nav4" href="#kariyer">Kariyer ve Başarılar</a>
       <a data-t="nav5" href="#galeri">Maçlar ve Fotoğraflar</a>
       <a data-t="nav6" href="#iletisim">İletişim</a>
@@ -515,6 +516,23 @@ html,body{overflow-x:hidden}
 </section>
 
 <!-- ====== SEASON ====== -->
+<section id="hakkinda">
+  <div class="wrap about-grid">
+    <div class="portrait reveal" id="portrait">
+      <div class="jersey">#<span data-k="number">7</span></div>
+    </div>
+    <div class="reveal">
+      <div data-t="aEy" class="eyebrow"></div>
+      <h2 class="title" id="aboutTitle">Arda Duha<br>Ardalı</h2>
+      <p class="lead" data-k="bio">Oyunu iki adım önden okuyan, tempoyu kontrol eden ve takım arkadaşlarını oyuna dahil eden bir oyun kurucu. Savunmada agresif, hücumda soğukkanlı; son saniye kararlarında sorumluluk almaktan çekinmiyor.</p>
+      <div class="facts" id="facts"></div>
+      <div data-t="aStyle" class="eyebrow" id="styleHead" style="color:var(--navy);margin-bottom:6px">Oyun Stili</div>
+      <div class="style-tags" id="styleTags"></div>
+      <div class="skills" id="skills"></div>
+    </div>
+  </div>
+</section>
+
 <section id="sezon">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -553,22 +571,7 @@ html,body{overflow-x:hidden}
 </section>
 
 <!-- ====== GALLERY ====== -->
-<section id="hakkinda">
-  <div class="wrap about-grid">
-    <div class="portrait reveal" id="portrait">
-      <div class="jersey">#<span data-k="number">7</span></div>
-    </div>
-    <div class="reveal">
-      <div data-t="aEy" class="eyebrow"></div>
-      <h2 class="title" id="aboutTitle">Arda Duha<br>Ardalı</h2>
-      <p class="lead" data-k="bio">Oyunu iki adım önden okuyan, tempoyu kontrol eden ve takım arkadaşlarını oyuna dahil eden bir oyun kurucu. Savunmada agresif, hücumda soğukkanlı; son saniye kararlarında sorumluluk almaktan çekinmiyor.</p>
-      <div class="facts" id="facts"></div>
-      <div data-t="aStyle" class="eyebrow" id="styleHead" style="color:var(--navy);margin-bottom:6px">Oyun Stili</div>
-      <div class="style-tags" id="styleTags"></div>
-      <div class="skills" id="skills"></div>
-    </div>
-  </div>
-</section>
+
 
 <section id="kariyer">
   <div class="wrap">
@@ -1542,7 +1545,7 @@ $('#seasonTabs').onclick=e=>{const b=e.target.closest('.tab');if(!b)return;seaso
 
 /* ---------- videolar ---------- */
 function vthumb(it,seed){
-  if(it.cover) return `<img src="${mURL(it.cover)}" alt="">`;
+  if(it.cover) return `<img src="${mURL(it.cover)}" alt="" loading="lazy">`;
   if(it.video) return `<video src="${mURL(it.video)}#t=1" muted playsinline preload="metadata"></video>`;
   return placeholder(seed);
 }
@@ -1615,7 +1618,7 @@ $('#videoArea2').onkeydown=e=>{if(e.key==='Enter'){const c=e.target.closest('.vc
 let galAll=false;
 function renderGallery(){
   gList=S.photos.filter(p=>gFilter==='all'||p.cat===gFilter);
-  const LIM=12, all=gList.length;
+  const LIM=8, all=gList.length;
   const shown=galAll?gList:gList.slice(0,LIM);
   const mb=$('#galMore'); if(mb){mb.style.display=all>LIM?'':'none';mb.textContent=galAll?'Daha az göster':`Daha fazla göster (${all-LIM})`;}
   $('#gallery').innerHTML=gList.length?shown.map((p,i)=>`<figure class="gi ${gFilter==='all'?esc(p.size||''):''}" data-i="${i}">${p.img?`<img src="${mURL(p.img)}" alt="${esc(p.cap)}" loading="lazy">`:placeholder(i)}${p.cap?`<figcaption>${esc(p.cap)}</figcaption>`:''}</figure>`).join('')
