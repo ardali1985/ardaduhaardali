@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Arda Duha Ardalı · #34 · Anadolu Efes · Basketbol</title>
+<link rel="alternate" hreflang="tr" href="https://ardaduhaardali.com/">
+<link rel="alternate" hreflang="en" href="https://ardaduhaardali.com/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://ardaduhaardali.com/">
 <link rel="canonical" href="https://ardaduhaardali.com/">
 <meta property="og:url" content="https://ardaduhaardali.com/">
 <meta property="og:image" content="https://ardaduhaardali.com/media/f4a8608726.jpg">
@@ -442,6 +445,17 @@ html,body{overflow-x:hidden}
   .btns{display:grid!important;grid-template-columns:1fr 1fr;gap:10px;width:100%}
   .btns .btn{padding:14px 8px!important;font-size:12px!important;text-align:center;justify-content:center}
 }
+</style>
+<style>
+.lang-sw{display:flex;gap:6px;margin-left:auto;margin-right:14px}
+.lang-sw button{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.06em;min-width:34px;height:28px;padding:0 8px;border-radius:6px;cursor:pointer;background:transparent;color:#C9D6EE;border:1.5px solid #4D6A9C;transition:.2s}
+.lang-sw button.on{background:#F3D9A6;border-color:#F3D9A6;color:#0B1A33}
+.lang-sw button:not(.on):hover{border-color:#fff;color:#fff}
+@media (min-width:1181px){.lang-sw{margin-left:0;margin-right:0;order:5}.nav .brand{font-size:20px}.nav .menu{gap:16px}}
+@media (min-width:981px) and (max-width:1180px){
+  .menu{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:var(--navy-deep);padding:20px 24px;gap:18px;border-bottom:1px solid var(--line)}
+  .menu.open{display:flex}.burger{display:block}}
+@media (max-width:420px){.nav .brand{font-size:14px;gap:8px;letter-spacing:.02em}.nav .brand .num{width:32px;height:32px;font-size:14px}.nav .burger{font-size:22px;padding:0}.lang-sw{gap:4px;margin-right:10px}.lang-sw button{min-width:30px;height:26px;font-size:11px;padding:0 6px}}
 </style>
 </head>
 <body>
@@ -1985,6 +1999,98 @@ addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='
   try{assets=canEdit?await claude.use('assets'):null}catch(e){assets=null}
   if(canEdit){$('#editFab').classList.add('show');if(location.hash==='#panel')openPanel()}
   authDone=true;tryAutoSave();
+})();
+</script>
+<script>(function(){
+const EN={
+"Bu Sezon":"This Season","Highlights ve Videolar":"Highlights & Videos","Hakkında":"About","Kariyer ve Başarılar":"Career & Honours","Maçlar ve Fotoğraflar":"Games & Photos","İletişim":"Contact",
+"Uzun Forvet":"Power Forward","Uzun Forvet (PF)":"Power Forward (PF)",
+"Oyunu oku.":"Read the game.","Tempoyu yönet.":"Control the tempo.","Farkı yarat.":"Make the difference.",
+"▶ Videoları İzle":"▶ Watch Videos","İletişime Geç":"Get in Touch",
+"Boy":"Height","2,00 m":"2.00 m","Doğum":"Born","Pozisyon":"Position","El":"Hand","Sol":"Left","Sağ":"Right",
+"Maç":"Games","SAY":"PTS","Sayı / maç":"Points / game","RB":"REB","Ribaund / maç":"Rebounds / game","AS":"AST","Asist / maç":"Assists / game","BLK":"BLK","Blok / maç":"Blocks / game",
+"Sezon İstatistikleri":"Season Statistics","Resmi TBF verileriyle maç ve sezon istatistikleri.":"Game-by-game and season statistics from official Turkish Basketball Federation (TBF) data.",
+"Rakip / Organizasyon":"Opponent / Competition","Lig / Takım":"League / Team","Süre":"Min","Sayı":"Pts","Rib":"Reb","Ast":"Ast","TÇ":"Stl","Blk":"Blk","2S":"2P","3S":"3P","SA":"FT","VP":"EFF",
+"İstanbul U16 Erkekler":"Istanbul U16 Boys","İstanbul U14 Erkekler":"Istanbul U14 Boys","U14 Türkiye Şampiyonası":"U14 Turkish Championship","U14 Anadolu Şampiyonaları · Kırmızı Grup":"U14 Anatolian Championships · Red Group",
+"Toplam / Ortalama":"Total / Average","Öne Çıkan Performanslar":"Standout Performances","İstanbul U16 · 2026–27":"Istanbul U16 · 2026–27",
+"9 sayı · 8 ribaund (6 savunma) · 2 asist · 3 top çalma · 2S 3/3":"9 pts · 8 reb (6 def) · 2 ast · 3 stl · 2P 3/3",
+"3S 3/5 · 5 ribaund · 1 asist · VP 12":"3P 3/5 · 5 reb · 1 ast · EFF 12",
+"4 sayı · 2S 2/2 · 4 ribaund · 1 asist · 1 top çalma":"4 pts · 2P 2/2 · 4 reb · 1 ast · 1 stl",
+"TBF’de tüm istatistikler →":"Full statistics on TBF →",
+"Sahada ARDA DUHA":"ARDA DUHA on court","Maç özetleri, öne çıkan anlar ve tam maç kayıtları.":"Game highlights, key moments and full game footage.",
+"İzle ▶":"Watch ▶","Maçlar":"Games","Klipler":"Clips","Bu bölümde henüz video yok.":"No videos in this section yet.",
+"Anadolu Efes altyapısında basketbol oynayan genç sporcu. Eyüp Basket Spor Kulübü altyapısında yetişti ve 2023'te U12 kategorisinde Anadolu Efes'e katıldı. 2 metre boyunda, sol elini kullanan bir uzun forvet. Efes'te U12, U13, U14, ve U16B takımlarında forma giydi; 2025–26 sezonunda İstanbul U14 Ligi'ni ve U14 Türkiye Şampiyonası'nı namağlup kazanan kadroda yer aldı. Şu anda Anadolu Efes U16B takımında ve Okyanus Koleji okul takımında oynuyor.":"Young basketball player in the Anadolu Efes youth program. He developed in the Eyüp Basket youth system and joined Anadolu Efes at U12 level in 2023. A 2.00 m (6'7\") left-handed power forward, he has played for Efes at U12, U13, U14 and U16B level, and was part of the squad that won both the Istanbul U14 League and the U14 Turkish Championship unbeaten in 2025–26. He currently plays for Anadolu Efes U16B and for the Okyanus College school team.",
+"Güncel takım":"Current team","Kullandığı el":"Shooting hand","Önceki kulüp":"Previous club","Anadolu Efes'e geliş":"Joined Anadolu Efes","2023 · transfer":"2023 · transfer","Doğum yılı":"Year of birth","Organizasyonlar":"Competitions","İstanbul U16 Erkekler, EYBL U15":"Istanbul U16 Boys, EYBL U15",
+"Oyun Stili":"Playing Style","Kariyer Geçmişi":"Career History","Eyüp Basket'ten Anadolu Efes'e uzanan basketbol yolculuğu.":"A basketball journey from Eyüp Basket to Anadolu Efes.",
+"Şubat 2021":"February 2021","Aralık 2022":"December 2022","Eylül 2023":"September 2023","2025–Bugün":"2025–Present",
+"İlk basketbol lisansı Eyüp Basket Gençlik ve Spor Kulübü'nde çıktı; altyapıda yetişti.":"Received his first basketball licence at Eyüp Basket Youth and Sports Club and came up through its youth system.",
+"Eyüp Basket'ten kiralık olarak Atlantik Spor Kulübü'nde forma giydi.":"Played for Atlantik Sports Club on loan from Eyüp Basket.",
+"7 Eylül 2023'te Eyüp Basket'ten Anadolu Efes Spor Kulübü'ne transfer oldu; U12'de forma giydi.":"Transferred from Eyüp Basket to Anadolu Efes Sports Club on 7 September 2023; played at U12 level.",
+"U13 takımının yanı sıra Anadolu Efes B ile U14 organizasyonlarında forma giydi.":"Played for the U13 team and also for Anadolu Efes B in U14 competitions.",
+"İstanbul U14 Ligi ve U14 Türkiye Şampiyonası'nı namağlup kazanan kadroda.":"Member of the squad that won the Istanbul U14 League and the U14 Turkish Championship unbeaten.",
+"İstanbul ligleri ve EYBL U15'te forma giydi; 1 Ekim 2026'da Teşvikiye U16 karşısında 11 sayı.":"Played in the Istanbul leagues and EYBL U15; scored 11 points against Teşvikiye U16 on 1 October 2026.",
+"Okyanus Koleji":"Okyanus College",
+"Okul takımında forma giymeye devam ediyor; 2025–26'da Ortaokullar Türkiye Şampiyonu oldu (U14).":"Continues to play for the school team; won the Turkish Middle School Championship in 2025–26 (U14).",
+"Şu anda Anadolu Efes U16B takımında oynuyor (İstanbul U16 Erkekler Ligi).":"Currently plays for Anadolu Efes U16B (Istanbul U16 Boys League).",
+"Şampiyonluklar ve Ödüller":"Championships & Awards",
+"U15 EYBL Gelişim Ligi Şampiyonu":"U15 EYBL Development League Champion","Anadolu Efes U15 · 2026–27":"Anadolu Efes U15 · 2026–27",
+"U14 Türkiye Şampiyonu":"U14 Turkish Champion","Anadolu Efes · Tokat, Nisan 2026 · 6–0 namağlup, finalde Bahçeşehir Okulları'nı 78–66 yendi":"Anadolu Efes · Tokat, April 2026 · unbeaten 6–0, beat Bahçeşehir Schools 78–66 in the final",
+"İstanbul U14 Şampiyonu":"Istanbul U14 Champion","Anadolu Efes · 2025–26 · namağlup":"Anadolu Efes · 2025–26 · unbeaten",
+"Ortaokullar Türkiye Şampiyonu":"Turkish Middle School Champion","Okyanus Koleji · U14 · 2025–26":"Okyanus College · U14 · 2025–26",
+"Ortaokullar İlçe Şampiyonu":"Middle School District Champion","U13 · okul takımı · 2024–25":"U13 · school team · 2024–25",
+"İstanbul U12 Şampiyonu":"Istanbul U12 Champion","U12 Gelişim Ligi Şampiyonu":"U12 Development League Champion",
+"U11 Leaders Cup Gelişim Ligi Şampiyonu":"U11 Leaders Cup Development League Champion","U11 Leaders Cup MVP":"U11 Leaders Cup MVP","Turnuvanın en değerli oyuncusu · 2022–23":"Tournament Most Valuable Player · 2022–23",
+"Galeri":"Gallery","Maç günlerinden ve turnuvalardan kareler.":"Moments from game days and tournaments.","Tümü":"All","Daha az göster":"Show less","Bu kategoride henüz fotoğraf yok.":"No photos in this category yet.",
+"Bizimle İletişime Geçin":"Contact Us","Kulüp, scout ve kamp davetleri için ailesiyle iletişime geçebilirsiniz.":"For club, scouting and camp invitations, please contact his family.",
+"E-posta":"Email","Konum":"Location","İstanbul, Türkiye":"Istanbul, Türkiye","İletişime Geçmek İçin Tıkla →":"Click to Get in Touch →",
+"Scout / Değerlendirme":"Scouting / Evaluation","Kamp Daveti":"Camp Invitation","Turnuva Daveti":"Tournament Invitation","Kulüp Teklifi":"Club Offer","Basın":"Press","Diğer":"Other","Gönder":"Send","Konu":"Subject",
+"+1 dk":"+1 min","YouTube’da aç ↗":"Open on YouTube ↗","YouTube’da izle":"Watch on YouTube",
+"Menü":"Menu","Ad Soyad":"Full name","Mesajınız":"Your message","Kapat":"Close","Yönetim paneli":"Admin panel"
+};
+const RX=[
+ [/^(\d+\/\d+) %(\d+)$/,"$1 $2%"],
+ [/^%(\d+)$/,"$1%"],
+ [/^Daha fazla göster \((\d+)\)$/,"Show more ($1)"],
+ [/^Başlangıç (\d+:\d\d)$/,"Start $1"],
+ [/^© (\d{4}) (.+)\. Tüm hakları saklıdır\.$/,"© $1 $2. All rights reserved."]
+];
+const ATTRS=['placeholder','title','aria-label','alt'];
+let LANG='tr';
+try{const q=new URLSearchParams(location.search).get('lang');LANG=q||localStorage.getItem('lang')||((navigator.language||'tr').toLowerCase().startsWith('tr')?'tr':'en')}catch(e){}
+if(LANG!=='en')LANG='tr';
+const orig=new WeakMap(), origAttr=new WeakMap();
+const tr=s=>{const t=s.trim();if(!t)return null;if(EN[t]!==undefined)return EN[t];for(const [r,v] of RX)if(r.test(t))return t.replace(r,v);return null};
+const skip=n=>{const p=n.parentElement;return !p||p.closest('script,style,#pnl,#editFab,.lang-sw')};
+let busy=false;
+function doNode(n){
+  if(n.nodeType===3){
+    if(skip(n))return;
+    if(!orig.has(n))orig.set(n,n.nodeValue);
+    const o=orig.get(n);let v=o;
+    if(LANG==='en'){const x=tr(o);if(x!==null){const m=o.match(/^(\s*)[\s\S]*?(\s*)$/);v=m[1]+x+m[2]}}
+    if(n.nodeValue!==v)n.nodeValue=v;
+  }else if(n.nodeType===1){
+    if(n.closest&&n.closest('script,style,#pnl,#editFab,.lang-sw'))return;
+    let oa=origAttr.get(n);
+    for(const a of ATTRS){if(!n.hasAttribute||!n.hasAttribute(a))continue;if(!oa){oa={};origAttr.set(n,oa)}if(!(a in oa))oa[a]=n.getAttribute(a);const o=oa[a];const x=LANG==='en'?tr(o):null;const v=x!==null?x:o;if(n.getAttribute(a)!==v)n.setAttribute(a,v)}
+    const w=document.createTreeWalker(n,NodeFilter.SHOW_TEXT|NodeFilter.SHOW_ELEMENT);let c;while(c=w.nextNode()){if(c===n)continue;if(c.nodeType===3)doNode(c);else if(c.attributes&&c.attributes.length){let oa2=origAttr.get(c);for(const a of ATTRS){if(!c.hasAttribute(a))continue;if(!oa2){oa2={};origAttr.set(c,oa2)}if(!(a in oa2))oa2[a]=c.getAttribute(a);const o=oa2[a];const x=LANG==='en'?tr(o):null;const v=x!==null?x:o;if(c.getAttribute(a)!==v)c.setAttribute(a,v)}}}
+  }
+}
+const TITLE={tr:document.title,en:"Arda Duha Ardalı · #34 · Anadolu Efes · Basketball"};
+const md=document.querySelector('meta[name=description]');const DESC={tr:md?md.content:'',en:"Arda Duha Ardalı – 2.00 m (6'7\") left-handed power forward, Anadolu Efes U16B (Istanbul, Türkiye). Statistics, game videos, career and championships."};
+function apply(){
+  busy=true;doNode(document.body);mo.takeRecords();busy=false;
+  document.documentElement.lang=LANG;document.title=TITLE[LANG];if(md)md.content=DESC[LANG];
+  document.querySelectorAll('.lang-sw button').forEach(b=>b.classList.toggle('on',b.dataset.l===LANG));
+}
+const mo=new MutationObserver(ms=>{if(busy)return;busy=true;for(const m of ms){if(m.type==='characterData'){const n=m.target;orig.set(n,n.nodeValue);doNode(n)}else m.addedNodes.forEach(doNode)}mo.takeRecords();busy=false});mo.observe(document.body,{childList:true,subtree:true,characterData:true});
+function addSwitch(){
+  const nav=document.querySelector('.nav');if(!nav||nav.querySelector('.lang-sw'))return;
+  const d=document.createElement('div');d.className='lang-sw';d.innerHTML='<button type="button" data-l="en" aria-label="English">EN</button><button type="button" data-l="tr" aria-label="Türkçe">TR</button>';
+  const bg=document.getElementById('burger');nav.insertBefore(d,bg);
+  d.onclick=e=>{const b=e.target.closest('button');if(!b)return;LANG=b.dataset.l;try{localStorage.setItem('lang',LANG)}catch(_){}apply()};
+}
+addSwitch();apply();
 })();
 </script>
 </body>
