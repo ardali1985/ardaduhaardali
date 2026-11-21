@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "https://www.ardaduhaardali.com/*"
+  to = "https://ardaduhaardali.com/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
