@@ -479,10 +479,6 @@ h2.title{font-size:clamp(32px,4vw,46px);letter-spacing:.01em;margin:0 0 10px}
 .tab.on{box-shadow:none}
 .table-wrap{border-radius:8px;overflow:hidden;border:1px solid var(--line)}
 .hl-card{border-radius:8px!important;background:var(--card)!important;border:1px solid var(--line)!important;border-top:2px solid var(--red)!important;box-shadow:none!important}
-.honour{border-radius:8px!important;background:var(--card)!important;border:1px solid var(--line)!important;box-shadow:none!important}
-.honour:hover{transform:none!important;border-color:rgba(255,255,255,.3)!important}
-.honour .ic{background:rgba(215,25,46,.12)!important;color:var(--red)!important}
-.honour .yr{font-size:14px!important;font-weight:700!important;color:var(--silver)!important;top:24px!important;letter-spacing:.08em}
 .gi{border-radius:6px;overflow:hidden}
 .gi img{transition:transform .5s}
 .gi:hover img{transform:scale(1.03)}
@@ -493,11 +489,10 @@ h2.title{font-size:clamp(32px,4vw,46px);letter-spacing:.01em;margin:0 0 10px}
 .cbar{border-left-width:3px}
 .chip{border-radius:8px!important}
 footer{border-top:1px solid var(--line);background:var(--navy-ink)}
-[data-t="cLe"],[data-t="gLe"]{display:none!important}
-.step::after{background:rgba(255,255,255,.16)!important;height:1px!important;top:10px!important}
-.step::before{width:20px;height:20px;border:2px solid rgba(255,255,255,.85)!important;background:var(--navy-ink)!important}
-.step.now::before{background:var(--red)!important;border-color:var(--red)!important;box-shadow:none!important}
-.step h4{font-size:24px}
+.honour{border-radius:14px!important;background:linear-gradient(160deg,rgba(31,95,191,.16),rgba(3,12,30,.45))!important;border:1px solid rgba(255,255,255,.08)!important}
+.honour::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),#f3d9a6)}
+.honour .ic{background:linear-gradient(135deg,rgba(243,217,166,.25),rgba(215,25,46,.2))!important;color:#f3d9a6!important}
+.honour .yr{font-size:40px;color:rgba(255,255,255,.07)}
 .subhead::after,#hoHead::after{background:var(--line)!important;height:1px!important}
 #hoHead{font-size:clamp(26px,3vw,36px)!important;margin-top:72px!important}
 .vcard.is-yt .play{width:64px!important;height:64px!important;border-radius:50%!important;background:rgba(215,25,46,.95)!important}
@@ -917,7 +912,7 @@ const DEF = {
   },
   {
    "b": "",
-   "cover": "https://i.ytimg.com/vi/ZJ5FWgv6N-M/hqdefault.jpg",
+   "cover": "media/b1031d3970.jpg",
    "d": "",
    "s": "U16 · 1. Bölüm",
    "t": "Anadolu Efes – Pamukspor",
@@ -926,7 +921,7 @@ const DEF = {
   },
   {
    "b": "",
-   "cover": "https://i.ytimg.com/vi/Si0p0hMEiWs/hqdefault.jpg",
+   "cover": "media/e7f2a424f4.jpg",
    "d": "",
    "s": "U16 · 2. Bölüm",
    "t": "Anadolu Efes – Pamukspor",
@@ -935,7 +930,7 @@ const DEF = {
   },
   {
    "b": "",
-   "cover": "https://i.ytimg.com/vi/anDsdUSD2K0/hqdefault.jpg",
+   "cover": "media/e46d48b2c0.jpg",
    "d": "",
    "s": "U16 · 3. Bölüm",
    "t": "Anadolu Efes – Pamukspor",
@@ -944,7 +939,7 @@ const DEF = {
   },
   {
    "b": "",
-   "cover": "https://i.ytimg.com/vi/p4gYshwRo2Q/hqdefault.jpg",
+   "cover": "media/b678b40fb4.jpg",
    "d": "",
    "s": "U16 · 4. Bölüm",
    "t": "Anadolu Efes – Pamukspor",
@@ -1586,8 +1581,8 @@ const DEF = {
   "aEy": "",
   "aStyle": "",
   "cEy": "",
-  "cLe": "",
-  "cTi": "Kariyer",
+  "cLe": "Eyüp Basket'ten Anadolu Efes'e uzanan basketbol yolculuğu.",
+  "cTi": "Kariyer Geçmişi",
   "gEy": "",
   "gLe": "",
   "gT0": "Tümü",
