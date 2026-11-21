@@ -436,63 +436,76 @@ td small{color:var(--muted);margin-left:4px;font-size:12px}
 .dropzone{border:2px dashed rgba(255,255,255,.22);border-radius:4px;padding:22px;text-align:center;color:var(--silver);margin-bottom:16px;cursor:pointer}
 .dropzone.drag{border-color:var(--red);background:rgba(215,25,46,.08)}
 @media (max-width:560px){.pgrid{grid-template-columns:1fr}}
-/* rakam şeridi – renkli */
-.glance{background:linear-gradient(100deg,#071b45 0%,#0d2f7a 45%,#123c9c 70%,#0b2560 100%)!important;position:relative;border-top:3px solid var(--red)}
-.glance::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 120% at 85% 0%,rgba(215,25,46,.22),transparent 60%);pointer-events:none}
-.glance .g-item{position:relative;z-index:1;border-right:1px solid rgba(255,255,255,.12)!important;border-bottom-color:rgba(255,255,255,.12)!important;transition:background .25s}
-.glance .g-item:hover{background:rgba(255,255,255,.05)}
-.glance .g-item .v{color:#fff!important;text-shadow:0 2px 18px rgba(0,0,0,.25)}
-.glance .g-item .v sup{color:#ff4d5e!important}
-.glance .g-item .l{color:#b9c7e6!important}
-.glance .g-item::before{content:"";position:absolute;left:26px;top:22px;width:22px;height:3px;background:var(--red);border-radius:2px}
-@media (max-width:760px){.glance .g-item::before{left:12px;top:12px;width:16px}}
-/* ===== profesyonel görünüm katmanı ===== */
-html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-::selection{background:var(--red);color:#fff}
-.eyebrow{display:inline-flex;align-items:center;gap:10px}
-.eyebrow::before{content:"";width:28px;height:2px;background:var(--red);border-radius:2px}
-h2.title{letter-spacing:.005em}
-section+section{border-top:1px solid rgba(255,255,255,.04)}
-header#top.solid{backdrop-filter:saturate(140%) blur(10px);-webkit-backdrop-filter:saturate(140%) blur(10px);background:rgba(6,20,48,.82)!important;box-shadow:0 8px 30px rgba(0,0,0,.25)}
-.btn{border-radius:10px!important;transition:transform .2s,box-shadow .2s,background .2s}
-.btn-red{background:linear-gradient(135deg,#e3192e,#b80f20)!important;box-shadow:0 10px 26px rgba(215,25,46,.35)}
-.btn-red:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(215,25,46,.45)}
-.btn-ghost{backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);background:rgba(255,255,255,.06)!important}
-.btn-ghost:hover{transform:translateY(-2px)}
-.bio-strip{border-radius:14px!important;overflow:hidden;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:rgba(6,20,48,.55)!important;border:1px solid rgba(255,255,255,.12)!important}
-.team-tag{border-radius:999px!important;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
-.tab{border-radius:999px!important;padding:10px 20px!important}
-.tab.on{box-shadow:0 6px 18px rgba(0,0,0,.25)}
-.vcard{border-radius:14px!important;border:1px solid rgba(255,255,255,.08)!important;box-shadow:0 14px 34px rgba(0,0,0,.35);transition:transform .3s,box-shadow .3s}
-.vcard:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(0,0,0,.45)}
-.vcard .shade{background:linear-gradient(180deg,rgba(3,12,30,0) 35%,rgba(3,12,30,.55) 62%,rgba(3,12,30,.95))!important}
-.vcard .meta b{font-size:20px;text-shadow:0 2px 12px rgba(0,0,0,.5)}
-.vcard .meta span{display:inline-block;margin-top:6px;font-family:var(--display);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:11.5px;color:#fff;background:rgba(215,25,46,.9);padding:4px 9px;border-radius:999px}
-.yt-badge{border-radius:8px!important}
-.table-wrap{border-radius:14px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,.3)}
-.hl-card{border-radius:14px!important;box-shadow:0 12px 30px rgba(0,0,0,.28);transition:transform .25s}
-.hl-card:hover{transform:translateY(-3px)}
-.honour{border-radius:14px!important;background:linear-gradient(160deg,rgba(31,95,191,.16),rgba(3,12,30,.45))!important;border:1px solid rgba(255,255,255,.08)!important;box-shadow:0 12px 30px rgba(0,0,0,.25)}
-.honour::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),#f3d9a6)}
-.honour .ic{background:linear-gradient(135deg,rgba(243,217,166,.25),rgba(215,25,46,.2))!important;color:#f3d9a6!important}
-.gallery .gi,.gi{border-radius:12px;overflow:hidden}
-.gi img{transition:transform .5s}
-.gi:hover img{transform:scale(1.05)}
-.portrait{border-radius:16px;overflow:hidden;box-shadow:0 24px 50px rgba(6,23,51,.35)}
-.facts{border-top-width:3px!important;border-top-color:var(--red)!important}
-.contact,.cbar{border-radius:16px}
-.chip{border-radius:12px!important}
-footer{border-top:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(6,20,48,0),rgba(6,20,48,.6))}
+/* ===== tasarım sistemi (final) ===== */
+:root{--navy:#0A2A66;--navy-deep:#071C45;--navy-ink:#05112A;--red:#D7192E;--card:#0B1E45;--line:rgba(255,255,255,.10);--silver:#B8C3D9}
+html{-webkit-font-smoothing:antialiased}
+body{background:var(--navy-ink)}
+section{padding:96px 0}
+section+section{border-top:0}
+/* başlıklar */
+.eyebrow{display:none!important}
+h2.title{font-size:clamp(32px,4vw,46px);letter-spacing:.01em;margin:0 0 10px}
+.lead{max-width:620px;line-height:1.6;color:var(--silver);font-size:16px}
+.sec-head{margin-bottom:36px}
+/* hero */
+.hero .court,.hero .bignum{display:none!important}
+.hero-media::after{background:linear-gradient(180deg,rgba(5,17,42,.45) 0%,rgba(5,17,42,.35) 50%,rgba(5,17,42,.92) 100%)!important}
+.team-tag{border:0!important;background:none!important;padding:0!important;border-radius:0!important;font-size:13px;letter-spacing:.2em;color:#fff}
+.team-tag i{box-shadow:none!important}
+.btn{border-radius:6px!important;box-shadow:none!important;transform:none!important}
+.btn-red{background:var(--red)!important}
+.btn-red:hover{background:#B5101F!important}
+.btn-ghost{background:transparent!important;border:1px solid rgba(255,255,255,.45)!important}
+.btn-ghost:hover{background:rgba(255,255,255,.08)!important;border-color:#fff!important}
+.bio-strip{border-radius:8px!important;background:rgba(5,17,42,.7)!important;border:1px solid var(--line)!important;backdrop-filter:none!important}
+.bio-strip>div{border-color:var(--line)!important}
+/* rakam şeridi */
+.glance{background:var(--navy)!important;border:0!important}
+.glance .g-item{border-right:1px solid rgba(255,255,255,.12)!important;border-bottom-color:rgba(255,255,255,.12)!important}
+.glance .g-item:last-child{border-right:0!important}
+.glance .g-item .v{color:#fff!important}
+.glance .g-item .v sup{color:#FF6B7A!important}
+.glance .g-item .l{color:#C4D0E8!important}
+/* kartlar */
+.vcard{border-radius:8px!important;border:1px solid var(--line)!important;box-shadow:none!important;transition:border-color .2s}
+.vcard:hover{border-color:rgba(255,255,255,.35)!important}
+.vcard .shade{background:linear-gradient(180deg,rgba(5,17,42,0) 45%,rgba(5,17,42,.9))!important}
+.vcard .meta b{font-size:18px}
+.vcard .meta span{font-size:13px;color:var(--silver)}
 .video-grid:not(.shorts) .vcard .meta b{font-size:16px;line-height:1.15}
 .video-grid:not(.shorts) .vcard .play{top:40%!important;transform:translate(-50%,-50%) scale(.82)!important}
-/* bölüm numaraları */
-body{counter-reset:sec}
-section[id]{counter-increment:sec}
-section[id] .eyebrow::before{content:counter(sec,decimal-leading-zero)!important;width:auto!important;height:auto!important;background:none!important;color:#fff;font-weight:800;letter-spacing:.06em;padding-right:12px;margin-right:2px;border-right:2px solid var(--red);line-height:1}
-#hakkinda .eyebrow::before{color:var(--navy)}
-#styleHead::before{display:none}
-.lead{max-width:640px;line-height:1.6}
-h2.title{margin-bottom:12px}
+.yt-badge{border-radius:4px!important}
+.tab{border-radius:6px!important;padding:10px 18px!important}
+.tab.on{box-shadow:none}
+.table-wrap{border-radius:8px;overflow:hidden;border:1px solid var(--line)}
+.hl-card{border-radius:8px!important;background:var(--card)!important;border:1px solid var(--line)!important;border-top:2px solid var(--red)!important;box-shadow:none!important}
+.honour{border-radius:8px!important;background:var(--card)!important;border:1px solid var(--line)!important;box-shadow:none!important}
+.honour:hover{transform:none!important;border-color:rgba(255,255,255,.3)!important}
+.honour .ic{background:rgba(215,25,46,.12)!important;color:var(--red)!important}
+.honour .yr{font-size:14px!important;font-weight:700!important;color:var(--silver)!important;top:24px!important;letter-spacing:.08em}
+.gi{border-radius:6px;overflow:hidden}
+.gi img{transition:transform .5s}
+.gi:hover img{transform:scale(1.03)}
+.portrait{border-radius:8px;overflow:hidden}
+.portrait::after{display:none!important}
+.facts{border-top:2px solid var(--navy)!important}
+.contact,.cbar{border-radius:8px}
+.cbar{border-left-width:3px}
+.chip{border-radius:8px!important}
+footer{border-top:1px solid var(--line);background:var(--navy-ink)}
+[data-t="cLe"],[data-t="gLe"]{display:none!important}
+.step::after{background:rgba(255,255,255,.16)!important;height:1px!important;top:10px!important}
+.step::before{width:20px;height:20px;border:2px solid rgba(255,255,255,.85)!important;background:var(--navy-ink)!important}
+.step.now::before{background:var(--red)!important;border-color:var(--red)!important;box-shadow:none!important}
+.step h4{font-size:24px}
+.subhead::after,#hoHead::after{background:var(--line)!important;height:1px!important}
+#hoHead{font-size:clamp(26px,3vw,36px)!important;margin-top:72px!important}
+.vcard.is-yt .play{width:64px!important;height:64px!important;border-radius:50%!important;background:rgba(215,25,46,.95)!important}
+.vcard.is-yt:hover .play{background:var(--red)!important}
+.yt-badge{background:rgba(5,17,42,.75)!important;color:#fff!important;font-size:10.5px!important;letter-spacing:.1em!important;padding:5px 8px!important}
+.yt-go{display:none!important}
+.subhead{color:#fff}
+
 /* mobil düzeltmeler */
 #videoArea2 .video-grid:not(.shorts) .vcard img{object-position:center 18%}
 html,body{overflow-x:hidden}
@@ -517,17 +530,17 @@ html,body{overflow-x:hidden}
 <style>
 #pnl,#editFab{display:none!important}
 .lang-sw{display:flex;gap:6px;margin-left:auto;margin-right:14px}
-.lang-sw button{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.06em;min-width:34px;height:28px;padding:0 8px;border-radius:6px;cursor:pointer;background:transparent;color:#C9D6EE;border:1.5px solid #4D6A9C;transition:.2s}
-.lang-sw button.on{background:#F3D9A6;border-color:#F3D9A6;color:#0B1A33}
+.lang-sw button{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.06em;min-width:34px;height:30px;padding:0 8px;border-radius:6px;cursor:pointer;background:transparent;color:#C9D6EE;border:1.5px solid #4D6A9C;transition:.2s}
+.lang-sw button.on{background:#fff;border-color:#fff;color:#0A2A66}
 .lang-sw button:not(.on):hover{border-color:#fff;color:#fff}
 /* üst menü: tıklanabilir hap butonlar */
-.nav .menu a{display:inline-flex;align-items:center;padding:9px 15px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);color:#e6ecf8!important;transition:background .2s,border-color .2s,transform .2s,color .2s}
-.nav .menu a:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.5);color:#fff!important;transform:translateY(-1px)}
-.nav .menu a.on{background:linear-gradient(135deg,#e3192e,#b80f20);border-color:transparent;color:#fff!important;box-shadow:0 6px 18px rgba(215,25,46,.35)}
+.nav .menu a{display:inline-flex;align-items:center;padding:9px 15px;border-radius:6px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);color:#e6ecf8!important;transition:background .2s,border-color .2s,transform .2s,color .2s}
+.nav .menu a:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.45);color:#fff!important}
+.nav .menu a.on{background:var(--red);border-color:var(--red);color:#fff!important}
 .nav .menu a.on::after{display:none!important}
 .nav-social{display:flex;gap:8px;align-items:center}
 .nav-social a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#fff;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);transition:.2s}
-.nav-social a:hover{background:var(--red);border-color:var(--red);transform:translateY(-1px)}
+.nav-social a:hover{background:var(--red);border-color:var(--red)}
 @media (min-width:1181px){.nav{gap:16px!important}.lang-sw{margin-left:0;margin-right:0;order:6}.nav-social{order:5;margin-left:auto}.nav .brand{font-size:20px}.nav .menu{gap:8px;font-size:13.5px;letter-spacing:.06em;margin-left:auto}}
 .menu-social{display:none}
 @media (max-width:1180px){.nav-social{display:none}.menu.open .menu-social{display:flex;gap:10px;margin-top:6px}.nav .menu .menu-social a{flex:1;justify-content:center;gap:8px;background:rgba(255,255,255,.08)}.nav .menu.open{gap:10px}.nav .menu.open a{justify-content:flex-start}}
@@ -825,7 +838,7 @@ const DEF = {
    "b": "",
    "cover": "media/20ab760d5c.jpg",
    "d": "",
-   "s": "Arda Duha Ardalı #34",
+   "s": "",
    "t": "2023 2024 Highlights",
    "video": null,
    "yt": "https://youtu.be/Q_ZOzyUvRoA?si=uLn0kJN-WrX_Xlqe"
@@ -1489,7 +1502,7 @@ const DEF = {
    "b": "",
    "cover": "media/8715f93eba.jpg",
    "d": "",
-   "s": "ARDA DUHA ARDALI #34",
+   "s": "",
    "t": "",
    "video": null,
    "yt": "https://youtube.com/shorts/eI6QLHsXgF0?feature=share"
@@ -1498,7 +1511,7 @@ const DEF = {
    "b": "",
    "cover": "media/37cc9c18b4.jpg",
    "d": "",
-   "s": "ARDA DUHA ARDALI #34",
+   "s": "",
    "t": "",
    "video": null,
    "yt": "https://youtube.com/shorts/iiq7qXiLUw0?feature=share"
@@ -1507,7 +1520,7 @@ const DEF = {
    "b": "",
    "cover": "media/fa7ec24f01.jpg",
    "d": "",
-   "s": "ARDA DUHA ARDALI #34",
+   "s": "",
    "t": "",
    "video": "media/242748719c.mp4",
    "yt": ""
@@ -1516,7 +1529,7 @@ const DEF = {
    "b": "",
    "cover": "media/c9b17150a7.jpg",
    "d": "",
-   "s": "ARDA DUHA ARDALI #34",
+   "s": "",
    "t": "",
    "video": "media/1bca80341f.mp4",
    "yt": ""
@@ -1525,7 +1538,7 @@ const DEF = {
    "b": "",
    "cover": "media/d39113a088.jpg",
    "d": "",
-   "s": "ARDA DUHA ARDALI #34",
+   "s": "",
    "t": "",
    "video": "media/7a09d05f3e.mp4",
    "yt": ""
@@ -1534,40 +1547,40 @@ const DEF = {
  "skills": [],
  "styleTags": [],
  "texts": {
-  "aEy": "Oyuncu Profili",
-  "aStyle": "Oyun Stili",
-  "cEy": "Kariyer",
-  "cLe": "Eyüp Basket altyapısından Anadolu Efes'e uzanan gelişim yolculuğu.",
-  "cTi": "Kariyer Geçmişi",
-  "gEy": "Galeri",
-  "gLe": "Maç günlerinden, turnuvalardan ve şampiyonluk anlarından kareler.",
+  "aEy": "",
+  "aStyle": "",
+  "cEy": "",
+  "cLe": "",
+  "cTi": "Kariyer",
+  "gEy": "",
+  "gLe": "",
   "gT0": "Tümü",
   "gT1": "Maç",
-  "gTi": "Fotoğraflar",
+  "gTi": "Galeri",
   "hTi": "Şampiyonluklar ve Ödüller",
   "hero2Style": "",
   "heroBtn1": "▶ Videoları İzle",
   "heroBtn2": "İletişim",
-  "hlTi": "Sezonun Öne Çıkan Maçları",
+  "hlTi": "Öne Çıkan Maçlar",
   "kBtn": "İletişim Formunu Aç →",
-  "kEy": "İletişim",
-  "kTi": "İletişime Geçin",
+  "kEy": "",
+  "kTi": "İletişim",
   "nav1": "İstatistikler",
   "nav2": "Videolar",
   "nav3": "Hakkında",
   "nav4": "Kariyer",
   "nav5": "Galeri",
   "nav6": "İletişim",
-  "sEy": "2026–27 Sezonu",
-  "sLe": "Türkiye Basketbol Federasyonu (TBF) resmi verileriyle maç maç performans ve sezon ortalamaları.",
+  "sEy": "",
+  "sLe": "2026–27 sezonu · Kaynak: TBF resmi istatistikleri",
   "sTi": "Sezon İstatistikleri",
   "scroll": "",
-  "vEy": "Videolar",
-  "vLe": "Tam maç kayıtları ve sahadan öne çıkan anlar.",
+  "vEy": "",
+  "vLe": "Tam maç kayıtları ve öne çıkan anlar.",
   "vT1": "Klipler",
   "vT2": "Maçlar",
   "vT3": "Highlights",
-  "vTi": "Maç Görüntüleri"
+  "vTi": "Videolar"
  }
 };
 
@@ -2198,7 +2211,7 @@ const EN={
 "E-posta":"Email","Konum":"Location","İstanbul, Türkiye":"Istanbul, Türkiye","İletişime Geçmek İçin Tıkla →":"Click to Get in Touch →",
 "Scout / Değerlendirme":"Scouting / Evaluation","Kamp Daveti":"Camp Invitation","Turnuva Daveti":"Tournament Invitation","Kulüp Teklifi":"Club Offer","Basın":"Press","Diğer":"Other","Gönder":"Send","Konu":"Subject",
 "+1 dk":"+1 min","YouTube’da aç ↗":"Open on YouTube ↗","YouTube’da izle":"Watch on YouTube",
-"Anadolu Efes B – Teşvikiye A":"Anadolu Efes B vs Teşvikiye A","İstatistikler":"Statistics","Videolar":"Videos","Kariyer":"Career","Fotoğraflar":"Photos","Oyuncu Profili":"Player Profile","2026–27 Sezonu":"2026–27 Season","Türkiye Basketbol Federasyonu (TBF) resmi verileriyle maç maç performans ve sezon ortalamaları.":"Game-by-game performance and season averages from official Turkish Basketball Federation (TBF) data.","Sezonun Öne Çıkan Maçları":"Season Standout Games","Maç Görüntüleri":"Game Footage","Tam maç kayıtları ve sahadan öne çıkan anlar.":"Full game recordings and standout moments on court.","Eyüp Basket altyapısından Anadolu Efes'e uzanan gelişim yolculuğu.":"A development journey from the Eyüp Basket youth program to Anadolu Efes.","Maç günlerinden, turnuvalardan ve şampiyonluk anlarından kareler.":"Moments from game days, tournaments and championship celebrations.","İletişime Geçin":"Get in Touch","İletişim Formunu Aç →":"Open Contact Form →","2012 doğumlu Arda Duha Ardalı, 2,00 m boyunda, sol elini kullanan bir uzun forvettir. Basketbola Eyüp Basket altyapısında başladı ve 2023'te U12 kategorisinde Anadolu Efes'e transfer oldu. Efes forması altında U12, U13, U14 ve U16B takımlarında oynadı; 2025–26 sezonunda İstanbul U14 Ligi'ni ve U14 Türkiye Şampiyonası'nı namağlup kazanan kadroda yer aldı. Bugün Anadolu Efes U16B takımında ve Okyanus Koleji okul takımında forma giyiyor.":"Born in 2012, Arda Duha Ardalı is a 2.00 m (6'7\") left-handed power forward. He started basketball in the Eyüp Basket youth program and joined Anadolu Efes at U12 level in 2023. With Efes he has played for the U12, U13, U14 and U16B teams, and was part of the squad that won both the Istanbul U14 League and the U14 Turkish Championship unbeaten in 2025–26. He currently plays for Anadolu Efes U16B and for the Okyanus College school team.","Kulüp, scout, kamp ve turnuva davetleri için aile ile iletişime geçebilirsiniz.":"For club, scouting, camp and tournament invitations, please contact the family.","Takım":"Team","Kullandığı El":"Shooting Hand","Önceki Kulüp":"Previous Club","Anadolu Efes'e Geliş":"Joined Anadolu Efes","Doğum Yılı":"Year of Birth","Ligler":"Leagues","2025 – Günümüz":"2025 – Present","Sayı / Maç":"Points / Game","Ribaund / Maç":"Rebounds / Game","Asist / Maç":"Assists / Game","Blok / Maç":"Blocks / Game","Menü":"Menu","Ad Soyad":"Full name","Mesajınız":"Your message","Kapat":"Close","Yönetim paneli":"Admin panel"
+"Anadolu Efes B – Teşvikiye A":"Anadolu Efes B vs Teşvikiye A","İstatistikler":"Statistics","Videolar":"Videos","Kariyer":"Career","Fotoğraflar":"Photos","Oyuncu Profili":"Player Profile","2026–27 Sezonu":"2026–27 Season","Türkiye Basketbol Federasyonu (TBF) resmi verileriyle maç maç performans ve sezon ortalamaları.":"Game-by-game performance and season averages from official Turkish Basketball Federation (TBF) data.","Sezonun Öne Çıkan Maçları":"Season Standout Games","Maç Görüntüleri":"Game Footage","Tam maç kayıtları ve sahadan öne çıkan anlar.":"Full game recordings and standout moments on court.","Eyüp Basket altyapısından Anadolu Efes'e uzanan gelişim yolculuğu.":"A development journey from the Eyüp Basket youth program to Anadolu Efes.","Maç günlerinden, turnuvalardan ve şampiyonluk anlarından kareler.":"Moments from game days, tournaments and championship celebrations.","İletişime Geçin":"Get in Touch","İletişim Formunu Aç →":"Open Contact Form →","2012 doğumlu Arda Duha Ardalı, 2,00 m boyunda, sol elini kullanan bir uzun forvettir. Basketbola Eyüp Basket altyapısında başladı ve 2023'te U12 kategorisinde Anadolu Efes'e transfer oldu. Efes forması altında U12, U13, U14 ve U16B takımlarında oynadı; 2025–26 sezonunda İstanbul U14 Ligi'ni ve U14 Türkiye Şampiyonası'nı namağlup kazanan kadroda yer aldı. Bugün Anadolu Efes U16B takımında ve Okyanus Koleji okul takımında forma giyiyor.":"Born in 2012, Arda Duha Ardalı is a 2.00 m (6'7\") left-handed power forward. He started basketball in the Eyüp Basket youth program and joined Anadolu Efes at U12 level in 2023. With Efes he has played for the U12, U13, U14 and U16B teams, and was part of the squad that won both the Istanbul U14 League and the U14 Turkish Championship unbeaten in 2025–26. He currently plays for Anadolu Efes U16B and for the Okyanus College school team.","Kulüp, scout, kamp ve turnuva davetleri için aile ile iletişime geçebilirsiniz.":"For club, scouting, camp and tournament invitations, please contact the family.","Takım":"Team","Kullandığı El":"Shooting Hand","Önceki Kulüp":"Previous Club","Anadolu Efes'e Geliş":"Joined Anadolu Efes","Doğum Yılı":"Year of Birth","Ligler":"Leagues","2025 – Günümüz":"2025 – Present","Sayı / Maç":"Points / Game","Ribaund / Maç":"Rebounds / Game","Asist / Maç":"Assists / Game","Blok / Maç":"Blocks / Game","Öne Çıkan Maçlar":"Standout Games","2026–27 sezonu · Kaynak: TBF resmi istatistikleri":"2026–27 season · Source: official TBF statistics","Tam maç kayıtları ve öne çıkan anlar.":"Full game recordings and highlights.","Menü":"Menu","Ad Soyad":"Full name","Mesajınız":"Your message","Kapat":"Close","Yönetim paneli":"Admin panel"
 };
 const RX=[
  [/^(\d+\/\d+) %(\d+)$/,"$1 $2%"],
