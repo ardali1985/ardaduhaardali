@@ -1939,6 +1939,7 @@ const secIO=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){$
 $$('section[id]').forEach(s=>secIO.observe(s));
 render();
 $$('.reveal').forEach(el=>io.observe(el));
+setTimeout(()=>$$('.reveal').forEach(el=>el.classList.add('in')),2500);
 
 /* =========================================================
    YÖNETİM PANELİ
